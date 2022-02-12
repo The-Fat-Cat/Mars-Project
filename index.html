@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+	
+<!--
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+
+
+	-->
+	
+<style>
+	html{
+		background-color:hsl(217, 54%, 11%);
+		display:grid;
+		place-items:center;
+	}
+	
+	body{
+		background-color:hsl(216, 50%, 16%);
+		max-width:80%;
+		max-height:100%;
+		margin:10% auto;
+		border-radius:5%;
+		box-shadow:5px 5px 40px rgba(11, 10, 11, 0.12);
+	
+	}
+	
+	@media screen and (min-width:1440px){
+		body{
+			max-width:20%;
+		}
+	}
+	.component{
+		display: block;
+		width:85%;
+		border-radius:10%; 
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding:6%;
+	}
+	.top{
+		color:hsl(0, 0%, 100%);
+		font-family: "Outfit";
+		font-weight: 600;
+		font-size: 23px;
+		letter-spacing: 1px;
+		
+	}
+	.middle{
+		color:hsl(215, 51%, 70%);
+		font-family: "Outfit";
+		font-weight: 300;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
+	.left{
+		color:hsl(178, 100%, 50%);
+		font-family: "Outfit";
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.right{
+		color:hsl(215, 51%, 70%);
+		font-family: "Outfit";
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	hr{
+		height: 1px;
+        background-color: hsl(215, 32%, 27%);
+        border: none;
+	}
+	.avatar{
+		max-width:6%;
+		border:hsla(0,0%,100%,1.00);
+		border-style: solid;
+		border-radius: 100%;
+		border-width: thin;
+	}
+	.bottom{
+		color:hsl(215, 51%, 70%);
+		font-family: "Outfit";
+		font-weight: 300;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	span{
+		color:hsl(0, 0%, 100%);
+		font-family: "Outfit";
+		font-weight: 400;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+</style>
+	
+</head>
+	
+	
+<body>
+	
+	<img src="images/image-equilibrium.jpg" alt="Picture of balanced cube" class="component">
+   <div class="top">Equilibrium #3429</div>
+
+	<div class="middle">Our Equilibrium collection promotes balance and calm.</div>
+ 	
+		
+ 		<div class="left">
+		<svg width="11" height="18" xmlns="http://www.w3.org/2000/svg" class="ETH"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041 ETH</div>
+
+	<div class="right">
+		<svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" class="clock"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>  
+		3 days left</div>
+  									<hr>
+	
+  <img src="images/image-avatar.png" alt="avatar of man" class="avatar"> <div class="bottom">Creation of <span>Jules Wyvern</span></div>
+
+  <!-- 
+	
+	<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gretel</a>.
+  </div>
+
+	-->
+</body>
+</html>
